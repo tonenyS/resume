@@ -11260,3 +11260,41 @@ h5,
         color: #fff; }
   .footer-48201 .copyright {
     border-top: 1px solid #404040; }
+
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    
+    }
+
+    html{
+      scroll-behavior: smooth;
+    }
+
+    .portfolio-heading{
+      padding: 2rem 0;
+      text-align:  center;
+    }
+    .portfolio-heading h1{
+      font-size: 3rem;
+    }
+    .portfolio-flex{
+      text-align: center;
+      display: flex;
+      height: auto;
+    }
+
+    .portfolio-flex .left-box, .portfolio-flex .right-box{
+      width: 50%;
+    }
+    .portfolio-flex img{
+      width: 100%;
+    }
+    .portfolio-flex .right-box, .portfolio-flex .left-box{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 3rem;
+    }
