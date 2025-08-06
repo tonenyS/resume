@@ -22,8 +22,10 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
   <link href=https://unpkg.com/aos@2.3.1/dist/aos.css rel="stylesheet">
-  <title>Recap 2024</title>
-  <link rel="icon" href="images/carousel-12.jpeg" type="image/x-icon">
+  <title>Resume</title>
+  <!-- <link rel="icon" href="images/carousel-12.jpeg" type="image/x-icon"> -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
 </head>
 
 <body>
@@ -35,592 +37,233 @@
     </div>
     <div class="site-mobile-menu-body"></div>
   </div>
-
-  <header class="site-navbar" role="banner">
-
-    <div class="container">
-      <div class="row align-items-center">
-
-        <div class="col-11 col-xl-2">
-          <h1 class="mb-0 site-logo"><a href="index.html" class="text-white mb-0">TONENY</a></h1>
-        </div>
-        <div class="col-12 col-md-10 d-none d-xl-block">
-          <nav class="site-navigation position-relative text-right" role="navigation">
-
-            <ul class="site-menu js-clone-nav mr-auto d-none d-lg-block">
-              <li class="active"><a href="index.html"><span>Home</span></a></li>
-              <li class="has-children">
-                <a href="about.html"><span>Facebook</span></a>
-                <ul class="dropdown arrow-top">
-                  <li><a href=https://web.facebook.com/ggafiled target="_blank"><i
-                        class="fas fa-band-aid"></i>Nattapol</a></li>
-                  <li><a href=https://web.facebook.com/profile.php?id=100002229868748 target="_blank">Sittigorn</a>
-                  </li>
-                  <li><a href=https://web.facebook.com/surapol.klaokrue target="_blank">Surapol</a></li>
-                  <li><a href=https://web.facebook.com/sunun.bill target="_blank">Sunan</a></li>
-                  <li><a href=https://web.facebook.com/peerapat.khoonkt target="_blank">Peerapat</a></li>
-                  <li><a href=https://web.facebook.com/toshiki.931/ target="_blank">Mahidon</a></li>
-                  <li><a href=https://web.facebook.com/profile.php?id=100002182302913 target="_blank">Wattanachai</a>
-                  </li>
-                  <li><a href=https://web.facebook.com/boayoie.boat target="_blank">Worawit</a></li>
-                </ul>
-              </li>
-              <li><a href=https://www.youtube.com/channel/UCTKeaum-ZC5823_jRE8JwtQ/featured
-                  target="_blank"><span>Youtube</span></a></li>
-              <li><a href=https://github.com/tonenyS/theeater_web><span>Github</span></a></li>
-              <li><a href="blog.html"><span>Blog</span></a></li>
-              <li><a href="contact.html"><span>About</span></a></li>
-            </ul>
-          </nav>
-        </div>
-
-        <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#"
-            class="site-menu-toggle js-menu-toggle text-white"><span class="icon-menu h3"></span></a></div>
-
+  <nav id="desktop-nav">
+    <div class="logo">Toneny</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav id="hamburger-nav">
+    <div class="logo">John Doe</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
-
-    </div>
-    </div>
-  </header>
-  <div class="home-slider owl-carousel js-fullheight">
-    <div class="slider-item js-fullheight" style="background-image:url(images/carousel-14.jpeg);">
-      <div class="overlay"></div>
-      <div class="container">
-        <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center">
-          <div class="col-md-12 ftco-animate">
-            <div class="text w-100 text-center">
-              <h1 class="mb-3">Recap 2024</h1>
-              <h2> MAHIDON TAIPUVANART</h2>
-            </div>
-          </div>
-        </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
       </div>
     </div>
+  </nav>
+  <section id="profile">
+    <div class="section__pic-container">
+      <img src="./assets/profile2.png" alt="John Doe profile picture" />
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1">Hello, I'm</p>
+      <h1 class="title">MAHIDOL TAIPUVANART</h1>
+      <p class="section__text__p2">Desktop Suport Engineer</p>
+      <div id="socials-container">
+        <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon"
+          onclick="location.href='https://linkedin.com/'" />
+        <a href="https://github.com/tonenyS" target="_blank" rel="noopener noreferrer">
+          <img src="./assets/github.png" alt="My Github profile" class="icon" />
+        </a>
 
-    <div class="slider-item js-fullheight" style="background-image:url(images/carousel-19.jpeg);">
-      <div class="overlay"></div>
-      <div class="container">
-        <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center">
-          <div class="col-md-12 ftco-animate">
-            <div class="text w-100 text-center">
-              <h1 class="mb-6">My life 2024</h1>
-              <!-- <h2>Toneny Stark</h2> -->
-            </div>
-          </div>
-        </div>
       </div>
     </div>
-
-    <div class="slider-item js-fullheight" style="background-image:url(images/carousel-16.jpeg);">
-      <div class="overlay"></div>
-      <div class="container">
-        <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center">
-          <div class="col-md-12 ftco-animate">
-            <div class="text w-100 text-center">
-              <h1 class="mb-3">My Team</h1>
-              <h2>IT AND OPG</h2>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <section id="portfolio">
-    <div class="portfolio-heading">
-      <h2>ความท้าทายที่ต้องประเผชิญและวิธีที่ทีมช่วยกันแก้ปัญหา</h2>
-      <p>
-        ในปี 2024
-        ความท้าทายในชีวิตที่ผ่านมาคือการต้องออกไปพูดให้ผู้คนเข้าใจในสิ่งที่เราพูดต้องการจะสื่อปกติก็พูดไม่ค่อยรู้เรื่อง
-        แต่ต้องออกไปพูดกลางที่สาธารณะเพราะด้วยหน้าที่การงาน แต่มันก็ทำให้เรากล้าแสดงออกขึ้นประมาณ 10%
-      </p>
-
-      <p>
-        ด้านการใช้ชีวิตก็ทั่วไปของมนุษย์เงินเดือน ไม่มีอะไรวือหว่า ด้านการทำงานก็มีปัญหาก็ช่วยกันแก้ไข
-        ส่วนผมนั้นจะช่วยบ้างไม่ช่วยบ้างก็ตาม
-      </p>
-    </div>
-
-    <div class="portfolio-flex">
-      <div class="left-box" data-aos="fade-right" data-aos-duration="2000">
-        <img src="images/carousel-13.jpeg" alt="photo">
-      </div>
-      <div class="right-box" data-aos="flip-left" data-aos-duration="2000">
-        <h1>ระบุผลงานที่มีส่วนร่วมในปี 2024</h1>
-        <p>
-          ในส่วนของผลงานนี้ก็จะคัดมาเฉพาะในส่่วนที่คิดว่ามีส่วนรวมและภูมิใจแล้วกันนะครับ
-        </p>
-        <div class="d-flex flex-row-reverse">
-          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Click
-            me</button>
-        </div>
-      </div>
-      <!-- Modal Mahidol-->
-      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-xl">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">ผลงานของหนูในปี2024</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <div class="container">
-                <div class="row">
-                  <div class="container">
-                    <div class="row">
-
-                      <div class="col-md-4">
-                        <div class="card" style="width: 18rem;">
-                          <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-                            <div class="carousel-indicators">
-                              <!-- <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
-                                class="active" aria-current="true" aria-label="Slide 1"></button>
-                              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                                aria-label="Slide 2"></button>
-                              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                                aria-label="Slide 3"></button> -->
-                            </div>
-                            <div class="carousel-inner">
-                              <div class="carousel-item active">
-                                <img src="images/Ticket.jpeg" class="d-block w-100" height="250px" width="200px"
-                                  alt="...">
-                                <div class="carousel-caption d-none d-md-block">
-                                  <!-- <h5>Tickets Support</h5> -->
-                                  <!-- <p>If you are emotionally involved in investing You'll never do it well..</p> -->
-                                </div>
-                              </div>
-                              <div class="carousel-item">
-                                <img
-                                  src=https://artralux.co.th/wp-content/uploads/2021/09/Artralux_Webblog450x450_Elon_Cover_re.jpg
-                                  class="d-block w-100" height="250px" width="200px" alt="...">
-                                <div class="carousel-caption d-none d-md-block">
-                                  <h5>Elon Musk</h5>
-                                  <!-- <p>Some representative placeholder content for the second slide.</p> -->
-                                </div>
-                              </div>
-                              <div class="carousel-item">
-                                <img src=https://www.img.in.th/images/fd789eb83282cf92c8e2ce0d6eb21942.png
-                                  class="d-block w-100" height="250px" width="200px" alt="...">
-                                <div class="carousel-caption d-none d-md-block">
-                                  <h5>Mark Zuckerberg</h5>
-                                  <!-- <p>Some representative placeholder content for the third slide.</p> -->
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="card-body">
-                            <p class="card-text">Support อยู่ทุกวันไม่รู้ต่อปีทำไปเท่าไหร่ ทั้งในระบบและนอกระบบ...</p>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="col-md-4">
-                        <div class="card" style="width: 18rem;">
-                          <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-                            <div class="carousel-indicators">
-                              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                                class="active" aria-current="true" aria-label="Slide 1"></button>
-                              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                                aria-label="Slide 2"></button>
-                              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
-                                aria-label="Slide 3"></button>
-                            </div>
-                            <div class="carousel-inner">
-                              <div class="carousel-item active">
-                                <img src="images/BI1.png" class="d-block w-100" height="250px" width="200px" alt="...">
-                                <div class="carousel-caption d-none d-md-block">
-                                  <!-- <h5>PowerBI Prishing mail Report</h5> -->
-                                  <!-- <p>If you are emotionally involved in investing You'll never do it well..</p> -->
-                                </div>
-                              </div>
-                              <div class="carousel-item">
-                                <img src="images/BI2.jpeg" class="d-block w-100" height="250px" width="200px" alt="...">
-                                <div class="carousel-caption d-none d-md-block">
-                                  <!-- <h5>PowerBI Prishing mail Report</h5> -->
-                                  <!-- <p>Some representative placeholder content for the second slide.</p> -->
-                                </div>
-                              </div>
-                              <div class="carousel-item">
-                                <img src="images/BI3.png" class="d-block w-100" height="250px" width="200px" alt="...">
-                                <div class="carousel-caption d-none d-md-block">
-                                  <!-- <h5>PowerBI It Project</h5> -->
-                                  <!-- <p>Some representative placeholder content for the third slide.</p> -->
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="card-body">
-                            <p class="card-text">มีโอกาสได้ทำ PowerBI ถึงจะน้อยแต่ก็ได้ทำ
-                              คนดูไม่ดูแต่เราจะอัพเดทข้อมูล...</p>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="col-md-4">
-                        <div class="card" style="width: 18rem;">
-                          <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-                            <div class="carousel-indicators">
-                              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                                class="active" aria-current="true" aria-label="Slide 1"></button>
-                            </div>
-                            <div class="carousel-inner">
-                              <div class="carousel-item active">
-                                <img src="images/UPS.jpeg" class="d-block w-100" height="250px" width="200px" alt="...">
-                                <div class="carousel-caption d-none d-md-block">
-                                  <h5></h5>
-                                  <!-- <p>If you are emotionally involved in investing You'll never do it well..</p> -->
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="card-body">
-                            <p class="card-text">UPS ได้มีโอกาสไปดูและแก้ไขปัญหา ถึงปัจจุบันยังไม่เสร็จก็ตาม...</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <br>
-
-                    <div class="row">
-
-                      <div class="col-md-4">
-                        <div class="card" style="width: 18rem;">
-                          <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-                            <div class="carousel-indicators">
-                              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
-                                class="active" aria-current="true" aria-label="Slide 1"></button>
-                              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                                aria-label="Slide 2"></button>
-                              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                                aria-label="Slide 3"></button>
-                            </div>
-                           <div class="carousel-inner">
-                              <div class="carousel-item active">
-                                <img src="images/duck1.jpeg" class="d-block w-100" height="250px" width="200px"
-                                  alt="...">
-                                <div class="carousel-caption d-none d-md-block">
-                                  <!-- <h5>Smoothies</h5> -->
-                                  <!-- <p>If you are emotionally involved in investing You'll never do it well..</p> -->
-                                </div>
-                              </div>
-                              <div class="carousel-item">
-                                <img src="images/duck2.jpeg" class="d-block w-100" height="250px" width="200px"
-                                  alt="...">
-                                <div class="carousel-caption d-none d-md-block">
-                                  <!-- <h5>Milk Shake</h5> -->
-                                  <!-- <p>Some representative placeholder content for the second slide.</p> -->
-                                </div>
-                              </div>
-                              <div class="carousel-item">
-                                <img src="images/duck4.jpeg" class="d-block w-100" height="250px" width="200px"
-                                  alt="...">
-                                <div class="carousel-caption d-none d-md-block">
-                                  <!-- <h5>Coke Zero </h5> -->
-                                  <!-- <p>Some representative placeholder content for the third slide.</p> -->
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="card-body">
-                            <p class="card-text">ได้ร่วมงาน what the duck 2024 ครั้งแรกรู้สึกประทับใจกับหัวข้อ</p>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="col-md-4">
-                        <div class="card" style="width: 18rem;">
-                          <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-                            <div class="carousel-indicators">
-                              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                                class="active" aria-current="true" aria-label="Slide 1"></button>
-                              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                                aria-label="Slide 2"></button>
-                              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
-                                aria-label="Slide 3"></button>
-                            </div>
-                            <div class="carousel-inner">
-                              <div class="carousel-item active">
-                                <img src="images/japan1.jpeg" class="d-block w-100" height="250px" width="200px"
-                                  alt="...">
-                                <div class="carousel-caption d-none d-md-block">
-                                  <!-- <h5>Katsudon</h5> -->
-                                  <!-- <p>If you are emotionally involved in investing You'll never do it well..</p> -->
-                                </div>
-                              </div>
-                              <div class="carousel-item">
-                                <img src="images/japan2.jpeg" class="d-block w-100" height="250px" width="200px"
-                                  alt="...">
-                                <div class="carousel-caption d-none d-md-block">
-                                  <!-- <h5>Fried Chicken Breast</h5> -->
-                                  <!-- <p>Some representative placeholder content for the second slide.</p> -->
-                                </div>
-                              </div>
-                              <div class="carousel-item">
-                                <img src="images/japan3.jpeg" class="d-block w-100" height="250px" width="200px"
-                                  alt="...">
-                                <div class="carousel-caption d-none d-md-block">
-                                  <!-- <h5>Fried Rice</h5> -->
-                                  <!-- <p>Some representative placeholder content for the third slide.</p> -->
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="card-body">
-                            <p class="card-text">เที่ยวญี่ปุ่นกับเพื่อนๆ แบบไปครั้งแรกมั่วๆ มึนๆ</p>
-                          </div>
-                        </div>
-                      </div>
-
-                    </div>
-
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="portfolio-flex">
-      <div class="left-box" data-aos="flip-right" data-aos-duration="2000">
-        <h1>เป้าหมาย 2025
-        </h1>
-        <p>
-          ทุกคนต่างมีเป้าหมาย แต่จะมีซักกี่คนที่ทำตามเป้าหมายสำเร็จ
-        </p>
-        <center>
-          <div class="d-flex flex-row-reverse">
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2">See
-              Photo</button>
-          </div>
-        </center>
-      </div>
-      <div class="right-box" data-aos="fade-left" data-aos-duration="2000">
-        <img src="images/carousel-12.jpeg" alt="photo">
-      </div>
-    </div>
-    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-xl">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">เป้าหมาย 3 เรื่องในปี 2025</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <div class="container">
-              <div class="row">
-                <div class="container">
-                  <div class="row">
-                    <div class="col-md-4">
-                      <div class="card" style="width: 18rem;">
-                        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-                          <div class="carousel-inner">
-                            <div class="carousel-item active">
-                              <img src="images/bitcoin.avif" class="d-block w-100" height="250px" width="200px"
-                                alt="...">
-                            </div>
-                          </div>
-                        </div>
-                        <div class="card-body">
-                          <p class="card-text">อยากรวยอยากมีเวลาใช้ชีวิตในช่วงอายุที่เหลืออยู่...</p>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="col-md-4">
-                      <div class="card" style="width: 18rem;">
-                        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-                          <div class="carousel-inner">
-                            <div class="carousel-item active">
-                              <img src="images/dogecoin.png" class="d-block w-100" height="250px" width="200px"
-                                alt="...">
-                            </div>
-                          </div>
-                        </div>
-                        <div class="card-body">
-                          <p class="card-text">มี doge coin 20000 เหรียญภายในปีนี้</p>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="col-md-4">
-                      <div class="card" style="width: 18rem;">
-                        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-                          <div class="carousel-inner">
-                            <div class="carousel-item active">
-                              <img src="images/Flutter.webp" class="d-block w-100" height="250px" width="200px"
-                                alt="...">
-                            </div>
-                          </div>
-                        </div>
-                        <div class="card-body">
-                          <p class="card-text">ทำโปรเจ็ค mobile 3 โปรเจค</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- 
-    <div class="portfolio-flex">
-      <div class="left-box" data-aos="fade-right" data-aos-duration="2000">
-        <img src="images/photo-10.jpg" alt="photo">
-      </div>
-      <div class="right-box" data-aos="flip-left" data-aos-duration="2000">
-        <h1>Peerapat Khoonkrathok</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate neque aut sit, magnam voluptatem
-          dignissimos perferendis corrupti qui ad aliquam explicabo nesciunt, inventore fugiat. Et, mollitia. Veritatis
-          ab mollitia alias?
-        </p>
-      </div>
-    </div>
-
-    <div class="portfolio-flex">
-      <div class="left-box" data-aos="flip-right" data-aos-duration="2000">
-        <h1>Wattanachai Pornpradap</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate neque aut sit, magnam voluptatem
-          dignissimos perferendis corrupti qui ad aliquam explicabo nesciunt, inventore fugiat. Et, mollitia. Veritatis
-          ab mollitia alias?
-        </p>
-      </div>
-      <div class="right-box" data-aos="fade-left" data-aos-duration="2000">
-        <img src="images/photo-11.jpg" alt="photo">
-      </div>
-    </div>
-
-    <div class="portfolio-flex">
-      <div class="left-box" data-aos="fade-right" data-aos-duration="2000">
-        <img src="images/photo-8.jpg" alt="photo">
-      </div>
-      <div class="right-box" data-aos="flip-left" data-aos-duration="2000">
-        <h1>Sittigorn Wongwaikhunanant</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate neque aut sit, magnam voluptatem
-          dignissimos perferendis corrupti qui ad aliquam explicabo nesciunt, inventore fugiat. Et, mollitia. Veritatis
-          ab mollitia alias?
-        </p>
-      </div>
-    </div>
-
-    <div class="portfolio-flex">
-      <div class="left-box" data-aos="flip-right" data-aos-duration="2000">
-        <h1>Sunan Srakhuntod</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate neque aut sit, magnam voluptatem
-          dignissimos perferendis corrupti qui ad aliquam explicabo nesciunt, inventore fugiat. Et, mollitia. Veritatis
-          ab mollitia alias?
-        </p>
-      </div>
-      <div class="right-box" data-aos="fade-left" data-aos-duration="2000">
-        <img src="images/photo-7.jpg" alt="photo">
-      </div>
-    </div> -->
-
-    <div class="portfolio-flex">
-      <div class="left-box" data-aos="fade-right" data-aos-duration="2000">
-        <img src="images/DISC.png" alt="photo">
-      </div>
-      <div class="right-box" data-aos="flip-left" data-aos-duration="2000">
-        <h1>DISC personality type​</h1>
-        <p>
-          - มีแรงกระตุ้นภายในที่แข็งแกร่งที่จะสร้างสรรค์และนำแนวคิดใหม่ๆ มาใช้ ​
-        </p>
-        <p>
-          - จัดการกับแรงกดดันได้ดี ​
-        </p>
-        <p>
-          - มุ่งมั่นสู่ความเป็นเลิศและคาดหวังให้ผู้อื่นทำเช่นเดียวกัน 
-        </p>
-        <p>
-          - มีความคิดสร้างสรรค์ แต่มีแนวโน้มที่จะหลีกเลี่ยงความเสี่ยง​
-        </p>
-        <!-- <div class="d-flex flex-row-reverse">
-          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Click
-            me</button>
-        </div> -->
-      </div>
   </section>
 
-  <footer class="footer-48201">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4 pr-md-5">
-          <a href="#" class="footer-site-logo d-block mb-4">Colorlib</a>
+  <section id="about">
+    <p class="section__text__p1">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+      <div class="section__pic-container">
+        <img src="./assets/about2.jpg" alt="Profile picture" class="about-pic" />
+      </div>
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+            <h3>Experience</h3>
+            <p>2+ years <br />Fullstack Developer 
+              <!-- <br> <a href="https://github.com/ggafiled/vue-crud-fisrt-mile-system"
+                target="_blank" rel="noopener noreferrer">
+                <img src="./assets/github.png" alt="My Github profile" class="icon" />
+              </a> -->
+            </p>
+          </div>
+          <div class="details-container">
+            <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+            <h3>Experience</h3>
+            <p>3+ years </p>
+            <p>Desktop Suport Engineer<br />In DHL BKK HUB</p>
+          </div>
+        </div>
+
+        <div class="text-container">
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
-            quasi perferendis ratione perspiciatis accusantium.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis
+            reprehenderit et laborum, rem, dolore eum quod voluptate
+            exercitationem nobis, nihil esse debitis maxime facere minus sint
+            delectus velit in eos quo officiis explicabo deleniti dignissimos.
+            Eligendi illum libero dolorum cum laboriosam corrupti quidem,
+            reiciendis ea magnam? Nulla, impedit fuga!
           </p>
         </div>
-        <div class="col-md">
-          <ul class="list-unstyled nav-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </div>
-        <div class="col-md">
-          <ul class="list-unstyled nav-links">
-            <li><a href="#">Clients</a></li>
-            <li><a href="#">Team</a></li>
-            <li><a href="#">Career</a></li>
-            <li><a href="#">Testimonials</a></li>
-            <li><a href="#">Journal</a></li>
-          </ul>
-        </div>
-        <div class="col-md">
-          <ul class="list-unstyled nav-links">
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Terms &amp; Conditions</a></li>
-            <li><a href="#">Partners</a></li>
-          </ul>
-        </div>
-        <div class="col-md text-md-center">
-          <ul class="social list-unstyled">
-            <li>
-              <a href="#"><span class="icon-instagram"></span></a>
-            </li>
-            <li>
-              <a href="#"><span class="icon-twitter"></span></a>
-            </li>
-            <li>
-              <a href="#"><span class="icon-facebook"></span></a>
-            </li>
-            <li>
-              <a href="#"><span class="icon-pinterest"></span></a>
-            </li>
-            <li>
-              <a href="#"><span class="icon-dribbble"></span></a>
-            </li>
-          </ul>
-          <p class=""><a href="#" class="btn btn-tertiary">Contact Us</a></p>
-        </div>
       </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
+  </section>
 
-      <div class="row">
-        <div class="col-12 text-center">
-          <div class="copyright mt-5 pt-5">
-            <p><small>&copy; 2019-2020 All Rights Reserved.</small></p>
+  </section>
+  <section id="experience">
+    <p class="section__text__p1">Explore My</p>
+    <h1 class="title">Experience</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <h2 class="experience-sub-title">Development</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>HTML</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>CSS</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>VueJS</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>JavaScript</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>SQL</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>DaxScript</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="details-container">
+          <h2 class="experience-sub-title">General Tools</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>PowerBI</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Figma</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Git</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Canva</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
           </div>
         </div>
       </div>
     </div>
-  </footer>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+  </section>
+
+  <section id="projects">
+    <p class="section__text__p1">Browse My Recent</p>
+    <h1 class="title">Projects</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/project-1.png" alt="Project 1" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Printer Report BI</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+              Open
+            </button>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/project-2.png" alt="Project 2" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Phishing Report BI</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+              Open
+            </button>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/project-3.png" alt="Project 3" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Training Report BI</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+              Open
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+  </section>
+
+
+
+
+
+
+
 </body>
 <script src=https://unpkg.com/aos@2.3.1/dist/aos.js></script>
 <script>
@@ -633,4 +276,3 @@
 <script src="js/main.js"></script>
 
 </html>
-
